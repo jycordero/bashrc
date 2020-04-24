@@ -1,0 +1,25 @@
+export ucolor='\e[33;1m'
+export hcolor='\e[32;1m'
+export dircolor='\e[36;1m'
+export white='\e[37;1m'
+export gitcolor='\e[31;1m'
+export reset='\e[0m'
+
+PS1=""
+PS1+="\[${ucolor}\] \u"
+PS1+="\[${white}\] @ "
+PS1+="\[${hcolor}\] \h"
+#if [ "$parse_git_isEmpty" = "false"  ] ; then
+#	PS1+="\[${white}\] git "
+#	PS1+="\[${gitcolor}\] $(parse_git_branch)"
+#fi
+PS1+="\[${white}\] git"
+PS1+="\[${gitcolor}\]"
+PS1+='$(parse_git_branch)'
+
+PS1+="\n"
+PS1+="     \[${dircolor}\] \w"
+PS1+="\n"
+PS1+="\[${reset}\]"
+PS1+=" $ "
+
