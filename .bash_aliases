@@ -14,5 +14,5 @@ alias cc="clear && clear"
 
 alias up="cd .."
 
-alias condaact = "conda activate"
-alias condadeact = "conda deactivate"
+alias condaact="conda activate"
+alias condadeact="conda deactivate"
