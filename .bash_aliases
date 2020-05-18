@@ -13,3 +13,6 @@ alias la1='ls -a1'
 alias cc="clear && clear"
 
 alias up="cd .."
+
+alias condaact = "conda activate"
+alias condadeact = "conda deactivate"
