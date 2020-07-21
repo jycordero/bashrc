@@ -16,3 +16,5 @@ alias up="cd .."
 
 alias condaact="conda activate"
 alias condadeact="conda deactivate"
+
+alias sshy="ssh -Y"

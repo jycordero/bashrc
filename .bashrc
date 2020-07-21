@@ -149,6 +149,22 @@ export PYTHONPATH=$ROOTSYS/lib:$PYTHONPATH:$ROOTSYS/bindings/pyroot
 export PATH=$PATH:/usr/share/mozilla/geckodriver
 
 export CLASSPATH=$CLASSPATH:/usr/share/java/mysql.jar
-export PYTHONPATH=$PYTHONPATH:/home/jcordero/CMS/SMP_ZGamma/python
-export PYTHONPATH=$PYTHONPATH:/home/jcordero/CMS/SMP_ZGamma_MCFM_Ana/python
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/jcordero/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/jcordero/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/jcordero/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/jcordero/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
